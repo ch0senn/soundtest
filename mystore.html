@@ -1,46 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
     <title>TOPPCOIN</title>
+            <script src="https://sandbox.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
 
-    <script src="https://sandbox.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
-        
+           <!--=====CSS=======-->
 
-    <!--=====FAB ICON=======-->
-    <!--=====CSS=======-->
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <meta charset="UTF-8" />
+            <title>TOPPCOIN</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+            <link rel="stylesheet" href="style.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/fontawesome.css">
+            <link rel="stylesheet" href="assets/css/magnific-popup.css">
+            <link rel="stylesheet" href="assets/css/nice-select.css">
+            <link rel="stylesheet" href="assets/css/slick-slider.css">
+            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+            <link rel="stylesheet" href="assets/css/aos.css">
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+            <link rel="stylesheet" href="assets/css/mobile-menu.css">
+            <link rel="stylesheet" href="assets/css/main.css">
 
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+            <!--=====JQUERY=======-->
+            <script src="assets/js/jquery-3-7-1.min.js"></script>
 
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/slick-slider.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/mobile-menu.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <!--=====JQUERY=======-->
-    <script src="assets/js/jquery-3-7-1.min.js"></script
-
-</head>
-<body class="body body2" onload="speech()">
+        </head>
+<body class="body body2">
 
     <!-- Preloader Start -->
     <div class="preloader preloader2">
@@ -50,29 +46,31 @@
         </div>
     </div>
     <!-- Preloader End -->
-    <!--=====progress END=======--
-
-    <ul>
+    <!--=====progress END=======-->
+    <!--ul>
         <li>
             <a id="PlayLink" href="speechmp3.mp3" onpageload="pplayMusic(this, 'music_select');">U Can Win</a>
         </li>
         <li>
             <a id="A1" href="http://www.moderntalking.ru/real/music/Modern_Talking-Brother_Louie(DEMO).mp3" onclick="pplayMusic(this, 'music_select');">Brother Louie</a>
         </li>
-    </ul>
+    </ul-->
 
     <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
     <script>
-        window.onpageload = function () {
-               play("speechmp3.mp3")
-         
-        }
+                window.onload = function () {
+                    var audio = document.getElementById("audio");
+                    audio.src = URL.createObjectURL("utils/speechmp3.mp3");
+                    audio.load();
+                    audio.play();
+
+                }
 
     </script>
 
 
-        <audio src="speechmp3.mp3" type="audio/mpeg" ></audio>
-    
+    <audio src="speechmp3.mp3" type="audio/mpeg" attribute="autoplay:true"></audio>
+
 
     <!--=====progress END=======-->
     <!--=====HEADER START=======-->
@@ -87,9 +85,9 @@
                                     <img src="assets/img/TOPPCOIN.png" alt="">
                                 </a>
                             </div>
-                            
 
-                            <audio src="speechmp3.mp3" autoplay="true" ></audio>
+
+                            <audio src="speechmp3.mp3" autoplay="true"></audio>
 
                             <div class="main-menu-ex main-menu-ex1">
                                 <ul>
@@ -147,21 +145,54 @@
                                       </div>
                                      </div>
                                     </!li
-                                                       <li><a href="index.html">Home</a></li>
+
+                                            <li><a href="index.html">Home</a></li>
                                                        -->
                                     <li><a href="index.html">Home</a></li>
 
-                                    <!--li><a href="mystore.html" target="_blank" >Store</a></!li>
-                                        -->
+                                    <li><a href="mystore.html" target="_blank">Store</a></li>
+
                                     <li class="dropdown-menu-parrent">
-                                        <a href="#" class="main1">Store<i class="fa-solid fa-angle-down"></i></a>
+                                        <a href="#" class="main1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
                                         <ul>
-                                            <li><a href="register.html" target="_blank"> Register</a></li>
+                                            <li><a href="register.html" target="_blank"> Rregister</a></li>
                                             <li><a href="login.html" target="_blank">login</a></li>
 
-                                            <li><a href="buyplan1.html" target="_blank">PLAN 1</a></li>
-                                            <li><a href="buyplan2.html" target="_blank">PLAN 2</a></li>
-                                            <li><a href="buyplan3.html" target="_blank">PLAN 3</a></li>
+                                            <li><a href="buyplan1.html" target="_blank">Live Prices</a></li>
+                                            <li><a href="buyplan2.html" target="_blank">Buy Crypto</a></li>
+                                            <li><a href="buyplan3.html" target="_blank">Sell Crypto</a></li>
 
                                         </ul>
                                     </li>
@@ -193,14 +224,14 @@
                                     <li class="dropdown-menu-parrent">
                                         <a href="#" class="main1">Blog <i class="fa-solid fa-angle-down"></i></a>
                                         <ul>
-                                            <li><a href="blog.html">Coming Soon</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
                                             <li class="has-dropdown has-dropdown1">
-                                                <!--a href="blog-details.html" class="main">Blog Detials<span><i class="fa-solid fa-angle-right"></i></span></!--a>
+                                                <a href="blog-details.html" class="main">Blog Detials<span><i class="fa-solid fa-angle-right"></i></span></a>
                                                 <ul class="sub-menu">
                                                     <li><a href="blog-details-left.html">Details Left</a></li>
                                                     <li><a href="blog-details-right.html">Details Right</a></li>
                                                     <li><a href="blog-details.html">Single Details</a></li>
-                                                </ul-->
+                                                </ul>
                                             </li>
                                         </ul>
                                     </li>
@@ -371,7 +402,7 @@
                 <div class="col-lg-6">
                     <div class="main-heading">
                         <span class="span" data-aos="fade-right" data-aos-duration="700">Invest In The Future Of BlockChain Technology</span>
-                        <h1 data-aos="fade-right" data-aos-duration="900">The Future is Here Invest in <span class="after">BlockChain Technology</span></h1>
+                        <.h1 data-aos="fade-right" data-aos-duration="900">Invest today and make your money work harder.</.h1>
                         <div class="space16"></div>
                         <p data-aos="fade-right" data-aos-duration="1100">TOPPCoin, Dont know how to trade crypto but know its a good way to make big money this is for you.</p>
                         <div class="space30"></div>
@@ -380,9 +411,7 @@
                             <a href="store.html" class="btn_theme btn_theme_active mt_40 wow fadeInDown" data-wow-duration="0.8s">Join the Revolution <i class="fa-solid fa-arrow-right"></i><span></span></a>
 
                             <div class="hero-button1 video-action-btn1 popup-youtube">
-                                
-                                 
-              >
+
                             </div>
                         </div>
                     </div>
@@ -646,7 +675,7 @@
                 </div>
                 <div class="heading2">
                     <h<button class="w3-btn w3-black">PLAN THREE</button>
-                
+
         <div class="space16"></div>
         <p width="60%" > >"Three" is our top-tier regular plan. It has a longer term of 70-days and a ROI of 399% plus a bonus scheme.</p>
                 </div>The investment range is 700 Euros to 2000
@@ -688,7 +717,7 @@
                 <div class="col-lg-6 m-auto text-center">
                     <div class="heading2">
                         <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><span>Work process</span></span>
-                        <h2 class="text-anime-style-3">How It Works</h2>
+                        <h2 class="text-anime-style-3">OUR PLANS</h2>
                     </div>
                 </div>
             </div>
@@ -704,9 +733,9 @@
                         </div>
                         <div class="single-box">
                             <div class="heading2">
-                                <h4><a href="login.html">MChoose ma plan</a></h4>
+                                <h4><a href="login.html">PLAN 1</a></h4>
                                 <div class="space16"></div>
-                                <p>Select from our three standard plans and enter the amount you want to invest. The term os the plan depends on which plan you select.</p>
+                                <p>Our starter plan has a fixed term of 60 days with a max of £100 investment. ROI of 100%.</p>
                             </div>
                         </div>
                     </div>
@@ -721,9 +750,9 @@
                         </div>
                         <div class="single-box">
                             <div class="heading2">
-                                <h4><a href="login.html">Make the payment</a></h4>
+                                <h4><a href="login.html">PLAN 2</a></h4>
                                 <div class="space16"></div>
-                                <p><h3>Make the payment using a credit/debit card or PayPal</h3></p>
+                                <p><h3>This plan has a range of £100 - £300 and a term of 65 days. ROI is 200%</h3></p>
                             </div>
                         </div>
                     </div>
@@ -738,16 +767,10 @@
                         </div>
                         <div class="single-box">
                             <div class="heading2">
-                                <h4><a href="login.html">DEnjoy your profits</a></h4>
+                                <h4><a href="login.html">PLAN 3</a></h4>
                                 <div class="space16"></div>
-                                <p>Sit back and wait for the term to end. At which point your investment amount plus the ROI will be credited to your account..</p>
+                                <p>Our largest investment plan has a range of £300-£2000 and a term of 90 days. ROI is 400% </p>
                             </div>
-
-
-
-
-
-
                         </div>
                     </div>
                 </div>
@@ -788,232 +811,232 @@
 
     <!--===== ROADMAP AREA START=======--
 
-        <div class="roadmap pb120 _relative d-none d-lg-block">
-          <div class="container">
-            
-        
-            <div class="row">
-              <div class="col-lg-7 m-auto text-center">
-                <div class="heading2">
-                  <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><span>Paycoin Roadmap</span></span>
-                  <h2 class="text-anime-style-3">Our iCO Roadmap</h2>
+            <div class="roadmap pb120 _relative d-none d-lg-block">
+              <div class="container">
+
+
+                <div class="row">
+                  <div class="col-lg-7 m-auto text-center">
+                    <div class="heading2">
+                      <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><span>Paycoin Roadmap</span></span>
+                      <h2 class="text-anime-style-3">Our iCO Roadmap</h2>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="space30"></div>
-5            <div class="row">
-              
-      <div class="roadmap-box heading2">
-        <h4><a href="buy.html">Listing to the major exchanges</a></h4>
-        <div class="space16"></div>
-        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-      </div>
-    </div>
+                <div class="space30"></div>
+    5            <div class="row">
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2">
-                        <h4><a href="buy.html">Listing to the major exchanges</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row align-items-center parent-area">
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2 right">
-                        <h4><a href="buy.html">Platform Development Starts</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                      <div class="circle-box-area right">
-                        <div class="circle-box">
-                          <p>17 June</p>
-                          <h3>2022</h3>
-                        </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row align-items-center parent-area">
-                    <div class="col-lg-6">
-                      <div class="circle-box-area">
-                        <div class="circle-box">
-                          <p>11 June</p>
-                          <h3>2023</h3>
-                        </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2">
-                        <h4><a href="buy.html">Platform Integration Marketplaces</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row align-items-center parent-area">
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2 right">
-                        <h4><a href="buy.html">Crypto Wallet Version Release</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                      <div class="circle-box-area right">
-                        <div class="circle-box">
-                          <p>23 April</p>
-                          <h3>2024</h3>
-                        </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row align-items-center parent-area">
-                    <div class="col-lg-6">
-                      <div class="circle-box-area">
-                        <div class="circle-box">
-                          <p>22 March</p>
-                          <h3>2024</h3>
-                        </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2">
-                        <h4><a href="buy.html">Groundwork Preparation For ICO</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
+          <div class="roadmap-box heading2">
+            <h4><a href="buy.html">Listing to the major exchanges</a></h4>
+            <div class="space16"></div>
+            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
           </div>
-          <img src="assets/img/shapes/about2-shape.png" alt="" class="sec-shape">
         </div>
 
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2">
+                            <h4><a href="buy.html">Listing to the major exchanges</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
+                      </div>
 
-        <div class="roadmap pb120 _relative d-block d-lg-none">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-7 m-auto text-center">
-                <div class="heading2">
-                  <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><span>Paycoin Roadmap</span></span>
-                  <h2 class="text-anime-style-3">Our iCO Roadmap</h2>
+                      <div class="row align-items-center parent-area">
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2 right">
+                            <h4><a href="buy.html">Platform Development Starts</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="circle-box-area right">
+                            <div class="circle-box">
+                              <p>17 June</p>
+                              <h3>2022</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center parent-area">
+                        <div class="col-lg-6">
+                          <div class="circle-box-area">
+                            <div class="circle-box">
+                              <p>11 June</p>
+                              <h3>2023</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2">
+                            <h4><a href="buy.html">Platform Integration Marketplaces</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center parent-area">
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2 right">
+                            <h4><a href="buy.html">Crypto Wallet Version Release</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="circle-box-area right">
+                            <div class="circle-box">
+                              <p>23 April</p>
+                              <h3>2024</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center parent-area">
+                        <div class="col-lg-6">
+                          <div class="circle-box-area">
+                            <div class="circle-box">
+                              <p>22 March</p>
+                              <h3>2024</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2">
+                            <h4><a href="buy.html">Groundwork Preparation For ICO</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
               </div>
+              <img src="assets/img/shapes/about2-shape.png" alt="" class="sec-shape">
             </div>
 
-            <div class="space30"></div>
-            <div class="row">
-              <div class="col-lg-10 m-auto">
-                <div class="roadmap-boxs">
-                  <div class="row align-items-center parent-area active">
-                    <div class="col-lg-6">
-                      <div class="circle-box-area">
-                        <div class="circle-box">
-                          <p>12 April</p>
-                          <h3>2021</h3>
-                        </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2">
-                        <h4><a href="buy.html">Listing to the major exchanges</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
+            <div class="roadmap pb120 _relative d-block d-lg-none">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-7 m-auto text-center">
+                    <div class="heading2">
+                      <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><span>Paycoin Roadmap</span></span>
+                      <h2 class="text-anime-style-3">Our iCO Roadmap</h2>
                     </div>
                   </div>
+                </div>
 
-                  <div class="row align-items-center parent-area active">
-                    <div class="col-lg-6">
-                      <div class="circle-box-area">
-                        <div class="circle-box">
-                          <p>12 April</p>
-                          <h3>2022</h3>
+                <div class="space30"></div>
+                <div class="row">
+                  <div class="col-lg-10 m-auto">
+                    <div class="roadmap-boxs">
+                      <div class="row align-items-center parent-area active">
+                        <div class="col-lg-6">
+                          <div class="circle-box-area">
+                            <div class="circle-box">
+                              <p>12 April</p>
+                              <h3>2021</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
                         </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2">
-                        <h4><a href="buy.html">Platform Development Starts</a></h4>
-                        <div class="space16"></div>
-                        <p>For the most part</p>
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2">
+                            <h4><a href="buy.html">Listing to the major exchanges</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
                       </div>
+
+                      <div class="row align-items-center parent-area active">
+                        <div class="col-lg-6">
+                          <div class="circle-box-area">
+                            <div class="circle-box">
+                              <p>12 April</p>
+                              <h3>2022</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2">
+                            <h4><a href="buy.html">Platform Development Starts</a></h4>
+                            <div class="space16"></div>
+                            <p>For the most part</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center parent-area active">
+                        <div class="col-lg-6">
+                          <div class="circle-box-area">
+                            <div class="circle-box">
+                              <p>12 April</p>
+                              <h3>2023</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2">
+                            <h4><a href="buy.html">Platform Integration Marketplaces</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row align-items-center parent-area active">
+                        <div class="col-lg-6">
+                          <div class="circle-box-area">
+                            <div class="circle-box">
+                              <p>12 April</p>
+                              <h3>2024</h3>
+                            </div>
+                            <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
+                          <div class="roadmap-box heading2">
+                            <h4><a href="buy.html">Crypto Wallet Version Release</a></h4>
+                            <div class="space16"></div>
+                            <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
+                          </div>
+                        </div>
+                      </div>
+
+
                     </div>
                   </div>
-
-                  <div class="row align-items-center parent-area active">
-                    <div class="col-lg-6">
-                      <div class="circle-box-area">
-                        <div class="circle-box">
-                          <p>12 April</p>
-                          <h3>2023</h3>
-                        </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2">
-                        <h4><a href="buy.html">Platform Integration Marketplaces</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row align-items-center parent-area active">
-                    <div class="col-lg-6">
-                      <div class="circle-box-area">
-                        <div class="circle-box">
-                          <p>12 April</p>
-                          <h3>2024</h3>
-                        </div>
-                        <img src="assets/img/shapes/roadmap-shape.png" alt="" class="line-shape">
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                      <div class="roadmap-box heading2">
-                        <h4><a href="buy.html">Crypto Wallet Version Release</a></h4>
-                        <div class="space16"></div>
-                        <p>We understand the importance of accessibility and liquidity for our token holders. That's why we're are committed to listing our token on major PayCoin.</p>
-                      </div>
-                    </div>
-                  </div>
-
-
                 </div>
               </div>
+              <img src="assets/img/shapes/about2-shape.png" alt="" class="sec-shape">
             </div>
-          </div>
-          <img src="assets/img/shapes/about2-shape.png" alt="" class="sec-shape">
-        </div>
 
-        <!--===== ROADMAP AREA END=======-->
+            <!--===== ROADMAP AREA END=======-->
     <!--===== OTHERS AREA START=======--
 
     <div class="others2" style="background-image: url(assets/img/bg/others2-bg.png);">
@@ -1043,208 +1066,6 @@
     </div>
 
     <!--===== OTHERS AREA END=======-->
-    <!--===== TESTIMONIAL AREA START=======-->
-
-    <div class="tes2 sp2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 m-auto text-center">
-                    <div class="heading2">
-                        <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><span>TESTIMONIALS</span></span>
-                        <h2 class="text-anime-style-3">From Our Investors</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="space30"></div>
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="space40"></div>
-                    <div class="main-image image-anime" data-aos="flip-right" data-aos-duration="800">
-                        <img src="assets/img/testimonial/tes2-img.png" alt="">
-                    </div>
-
-                </div>
-
-                <div class="col-lg-7 _relative">
-                    <div class="tes2-slider" data-aos="fade-up" data-aos-duration="800">
-                        <div class="single-slider">
-                            <div class="icon">
-                                <img src="assets/img/icons/tes2-qute.png" alt="">
-                            </div>
-                            <div class="space20"></div>
-                            <p class="pera">"Joining this platform was one of the best decisions I've made in the crypto space. I just love the fact that you don't have to be a crypto expert, and that you can choose your level of investment yet get garanteed returns.”</p>
-
-                            <div class="bottom-area">
-                                <div class="image">
-                                    <img src="assets/img/testimonial/tes2-bottom-img.png" alt="">
-                                </div>
-                                <div class="heading">
-                                    <h5><a href="#">Shakib Mahmud</a></h5>
-                                    <p>Operating Officer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single-slider">
-                            <div class="icon">
-                                <img src="assets/img/icons/tes2-qute.png" alt="">
-                            </div>
-                            <div class="space20"></div>
-                            <p class="pera">'The fact that I dont need to know anything about crypto was a big plus for me. I just want to invest and get a fixed return'</p>
-
-                            <div class="bottom-area">
-                                <div class="image">
-                                    <img src="assets/img/testimonial/tes2-bottom-img.png" alt="">
-                                </div>
-                                <div class="heading">
-                                    <h5><a href="#">Shakib Mahmud</a></h5>
-                                    <p>Operating Officer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="nav-area">
-                        <button class="arrow-left"><i class="fa-solid fa-angle-left"></i></button>
-                        <button class="arrow-right"><i class="fa-solid fa-angle-right"></i></button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <img src="assets/img/shapes/tes2-shape.png" alt="" class="sec-shape animate3">
-    </div>
-
-    <!--===== TESTIMONIAL AREA END =======-->
-    <!--===== BLOG AREA START =======-->
-
-    <div class="blog2 pb120">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="heading2">
-                        <span class="span" data-aos="zoom-in-left" data-aos-duration="700"><span>OUr Blog</span></span>
-                        <h2 class="text-anime-style-3">Blog & News</h2>
-                        <div class="space16"></div>
-                        <p data-aos="fade-right" data-aos-duration="800">Being part of this ICO journey has been nothing short of extra. The team's dedication to transforming to the PayCoin blockchain technology is palpable, and their commitment to transparency and excellence.</p>
-                        <div class="space30"></div>
-                        <div class="" data-aos="fade-right" data-aos-duration="900">
-                            <a href="blog.html" class="btn_theme btn_theme_active mt_40 wow fadeInDown" data-wow-duration="0.8s">read more blog <i class="fa-solid fa-arrow-right"></i><span></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <div class="blog2-box" data-aos="fade-up" data-aos-duration="700">
-                        <div class="">
-                            <div class="image image-anime">
-                                <img src="assets/img/blog/blog2-img1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="heading2">
-                            <h3><a href="blog-details.html">Unlocking the Future The Pay Power of ICO Cryptocurrency</a></h3>
-                            <div class="space16"></div>
-                            <p>I have heard alot of things about crypto-investing, but this is  so simple that it makes sense immediately.</p>
-                            <a href="blog-details.html" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-
-                    <div class="blog2-box" data-aos="fade-up" data-aos-duration="900">
-                        <div class="">
-                            <div class="image image-anime">
-                                <img src="assets/img/blog/blog2-img2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="heading2">
-                            <h3><a href="blog-details.html">This platform  is set to revolutionise this industry.</a></h3>
-                            <div class="space16"></div>
-                            <p>Initial feedback is so positive that the future looks very positive for this breath of fresh air. Kepp it simple and deliver on your promises. These are the basics that invetors are looking for..</p>
-                            <a href="blog-details.html" class="learn">Read More <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--===== BLOG AREA END =======-->
-    <!--=====CTA AREA START=======--
-
-    <div class="cta2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 m-auto text-center" .>
-                    <div class="col-sm-4">
-                        <div class="paymeent-areao">
-                            <script src="https://www.paypal.com/sdk/js?client-id=BAATE0KpDIzTsGpwIPcN7j-BDwNcvKxBKnGJccDUwrSBIGjrVS9cmPuVjeGIoiNBqIISySa39KUwhFAHGQ&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
-                            <div id="paypal-container-QZ9CTK4NXAH3L"></div>
-                            <script>
-                                paypal.HostedButtons({
-                                    hostedButtonId: "QZ9CTK4NXAH3L",
-                                }).render("#paypal-container-QZ9CTK4NXAH3L")
-                            </script>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 m-auto text-center" .>
-                    <div class="col-sm-4" .>
-                        <div class="paymeent-areao">
-                            <script src="https://www.paypal.com/sdk/js?client-id=BAATE0KpDIzTsGpwIPcN7j-BDwNcvKxBKnGJccDUwrSBIGjrVS9cmPuVjeGIoiNBqIISySa39KUwhFAHGQ&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
-                            <div id="paypal-container-QZ9CTK4NXAH3L"></div>
-                            <script>
-                                paypal.HostedButtons({
-                                    hostedButtonId: "QZ9CTK4NXAH3L",
-                                }).render("#paypal-container-QZ9CTK4NXAH3L")
-                            </script>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 m-auto text-center" .>
-                    <div class="col-sm-4">
-                        <div class="paymeent-areao">
-                            <script src="https://www.paypal.com/sdk/js?client-id=BAATE0KpDIzTsGpwIPcN7j-BDwNcvKxBKnGJccDUwrSBIGjrVS9cmPuVjeGIoiNBqIISySa39KUwhFAHGQ&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
-                            <div id="paypal-container-QZ9CTK4NXAH3L"></div>
-                            <script>
-                                paypal.HostedButtons({
-                                    hostedButtonId: "QZ9CTK4NXAH3L",
-                                }).render("#paypal-container-QZ9CTK4NXAH3L")
-                            </script>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
-
-
-            
-    <!--=====CTA AREA END=======-->
-    <!--=====CTA IMAGE AREA START=======--
-
-    <div class="cta2-images">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 m-auto text-center">
-                    <div class="images-area">
-                        <div class="image1">
-                            <img src="assets/img/others/cta2-dashboard.png" alt="">
-                        </div>
-
-                        <div class="image2">
-                            <img src="assets/img/shapes/cta2-coin.png" alt="">
-                        </div>
-                        <div class="image3">
-                            <img src="assets/img/shapes/cta2-shape.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--=====CTA IMAGE AREA END=======-->
     <!--===== FOOTER AREA START =======-->
 
@@ -1376,6 +1197,6 @@
 
 
 
+    </div>
 </body>
 </html>
-
